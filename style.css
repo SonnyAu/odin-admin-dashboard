@@ -160,6 +160,7 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+
 .left-cards {
   grid-column: 1/3;
   display: grid;
@@ -171,6 +172,13 @@ ul {
   column-gap: 20px;
   margin: 10px;
   overflow: auto;
+  position: relative;
+}
+.projects-title {
+  position: absolute;
+  font-size: 25px;
+  top: 0px;
+  margin-left: 5px;
 }
 .left-text {
   color: gray !important;
@@ -209,6 +217,16 @@ ul {
   align-items: center;
   margin-right: 20px;
 }
+.top-right-card {
+  margin-top: 25px;
+  position: relative;
+}
+.announcements-title {
+  position: absolute;
+  top: -60px;
+  margin-left: -16px;
+  font-size: 25px;
+}
 
 hr {
   border: none;
@@ -224,4 +242,40 @@ hr {
   color: gray !important;
   font-size: 15px;
   font-weight: normal !important;
+}
+
+.bottom-right-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  width: 88.5%;
+  height: 67.5%;
+}
+.trending-title {
+  position: absolute;
+  top: -60px;
+  margin-left: -20px;
+  font-size: 25px;
+}
+.trending-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.trending-pfp {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.trending-text {
+  margin-left: 20px;
+}
+.tag {
+  font-weight: normal;
+}
+.bio {
+  margin-top: 5px;
+  font-weight: normal !important;
+  color: gray !important;
 }
